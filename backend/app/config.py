@@ -8,7 +8,7 @@ class Config:
     BASE_DIR = os.path.abspath(os.path.dirname(__file__))
     SECRET_KEY = os.getenv("SECRET_KEY", "dev-secret-key-at-least-32-chars-long-for-security")
     JWT_SECRET_KEY = os.getenv("JWT_SECRET_KEY", "jwt-secret-key-at-least-32-chars-long-for-jwt-security")
-    _default_supabase = "postgresql://postgres.kruqkhgftjixtfflpdob:Daniell1100%40%3D_@aws-1-ap-northeast-2.pooler.supabase.com:5432/postgres"
+    _default_supabase = "postgresql://postgres.dqgrgemwpqpodwvxxaxm:Daniell1100%40%3D_@aws-0-ap-southeast-2.pooler.supabase.com:5432/postgres"
     _db_url = os.getenv("DATABASE_URL", _default_supabase)
     if not _db_url or "sqlite" in _db_url.lower():
         _db_url = _default_supabase
